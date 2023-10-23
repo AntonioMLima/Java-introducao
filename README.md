@@ -32,7 +32,7 @@ public class Myclass {
 
 Algumas classes podem não conter visibilidade pública, mas é o caso da maioria.
 
-Por convenção, todas classes devem começar com letra maíuscula. também é importante que toda classe tenha o mesmo nome do arquivo em que foi definida, qualquer IDE garantirá isso.
+Por convenção, todas classes devem começar com letra maíuscula. Também é importante que toda classe tenha o mesmo nome do arquivo em que foi definida, qualquer IDE garantirá isso.
 
 
 
@@ -55,11 +55,11 @@ Tipos numéricos:
 
   
 
-Como pode ser visto, apenas os tipos **float** e **double** possuem casas decimais, enquanto o resto são números inteiros. Isso é muito importante e afeta os momentos em que cada um deles deve ser usado.
+Como pode ser visto, apenas os tipos **float** e **double** possuem casas decimais, enquanto os outros tipos são números inteiros. Isso é muito importante e afeta o momento em que cada um será usado.
 
   
 
-Os tipos mais usandos são **int** e **double** por uma questão de praticidade.
+Os tipos mais usados são **int** e **double** por uma questão de praticidade.
 
   
 
@@ -67,11 +67,11 @@ Os tipos mais usandos são **int** e **double** por uma questão de praticidade.
 
   
 
-O tipo **boolean** possui dois possíveis valores,  é um tipo muito importante para trabalharmos com estruturas de controle.
+O tipo **boolean** possui dois possíveis valores e é muito importante para trabalharmos com estruturas de controle.
 
   
 
-Para que possamos representar uma String em java usamos a classe nativa [**String**](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) que possui algumas funções bem interessante para trabalharmos com texto. Exemplo de String: "Seu texto aqui".
+Para que possamos representar uma string em java usamos a classe nativa [**String**](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) que possui algumas funções bem interessante para trabalharmos com texto. Exemplo de String: "Seu texto aqui".
 
 Por fim temos o tipo **char** que representa um caractere ou um número inteiro que corresponde a alguma letra na [Tabela ASII](https://web.fe.up.pt/~ee96100/projecto/Tabela%20ascii.htm).
 
@@ -130,7 +130,7 @@ Para definir uma variável constante basta adicionar a palavra final antes da de
  final double PI = 3.14
 ```
 
-Por convenção todas as variáveis constantes são escritas com letras maiúsculas. Para váriaveis normais e funções usamos o padrão  [camelCase](https://coodesh.com/blog/dicionario/o-que-e-camelcase/).
+Por convenção todas as variáveis constantes são escritas com letras maiúsculas. Para variáveis comuns e funções usamos a convenção [camelCase](https://coodesh.com/blog/dicionario/o-que-e-camelcase/).
 
 ## Escopo
 
@@ -163,7 +163,7 @@ No exemplo acima, o código não é executável, pois a variável 'x' não está
 		}	
 	}
 ```
-Agora nossa varível está vísivel e o código rodará perfeitamente. 
+Agora nossa varível está vísivel e o código rodará perfeitamente. Podemos concluir também que a definição da visibilidade se dará pelo lugar onde a variável foi definida.
 
 
 
@@ -173,15 +173,14 @@ Operadores são uma parte fundamental de toda linguagem e eles são dividos em a
 
 - **Lógicos**
 
-Possuímos dois operadores lógicos em Java: '&&' e '| |'.
+Possuímos dois operadores lógicos em Java: '&&',  '| |' e '!'.
 
-Ambos operadores trabalham com duas ou mais varíveais do tipo boolean.
+'&&' e '| |' trabalham com duas ou mais varíveais do tipo boolean.
 
-Também é importante mencionar o operador de negação, representado pelo simbolo '!', que tem como objetivo inverter o valor de uma variável do tipo boolean.
+o operador de negação, representado pelo simbolo '!', que tem como objetivo inverter o valor de uma variável do tipo boolean.
 
 
-
-Usando como base os conceitos da [tabela verdade](https://www.todamateria.com.br/tabela-verdade/), o operador '&&' representa um conjunção, o operador '| |' representa uma disjunção e operador '!' representa uma negação. Ou também: && = E , | | = OU e ! = NÃO
+Usando como base os conceitos da [tabela verdade](https://www.todamateria.com.br/tabela-verdade/), o operador '&&' representa um conjunção, o operador '| |' representa uma disjunção e o operador '!' representa uma negação. Ou também: && = E , | | = OU e ! = NÃO
 
 ```Java
 public class LogicOperators {
@@ -319,7 +318,9 @@ public class Operators {
 
 - **Igualdade**
 
-Por último nós temos o operador de igualdade que é usado para comparar se duas variáveis são iguais ou se dois objetos apontam para o endereço de memória. O operador também nos retorna um valor do tipo boolean.
+Por último nós temos os operadores de igualdade, '!=' e '==', usados para comparar se duas variáveis são iguais ou se dois objetos apontam para o endereço de memória. O operador também nos retorna um valor do tipo boolean.
+
+
 
 ```Java
 public  static  void  main(String[]  args)  {
@@ -327,7 +328,7 @@ public  static  void  main(String[]  args)  {
 int  number1  =  3;
 int  number2  =  6;
 
-boolean  isEquals  =  number1  ==  number2;  
+boolean  isEquals  =  number1  !=  number2;  
 System.out.println(isEquals);
 
 String  name1  =  "ANTONIO";
