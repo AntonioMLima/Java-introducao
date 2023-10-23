@@ -305,7 +305,7 @@ Agora usamos o operador ternário para definir o valor da variável 'result', to
 
 - **Atribuição**
 
-O operador de atribuição é de longe o mais simples de todos, é usado simplesmente para definir o valor de uma variável.
+O operador de atribuição é usado para definir o valor de uma variável.
 
 ```Java
 public class Operators {
